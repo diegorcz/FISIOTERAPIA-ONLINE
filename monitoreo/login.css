@@ -1,0 +1,82 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Pantalla de Inicio de Sesión */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #007acc;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.recover-link {
+    display: block;
+    margin-top: 10px;
+    color: #007acc;
+    text-decoration: none;
+}
+
+.recover-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 15px;
+        box-shadow: none;
+    }
+    
+    .login-form input,
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

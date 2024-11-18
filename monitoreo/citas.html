@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar Citas - Monitoreo de Actividad Física</title>
+    <link rel="stylesheet" href="citas.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="main.html">Inicio</a></li>
+                <li><a href="citas.html">Citas</a></li>
+                <li><a href="historial.html">Historial</a></li>
+                <li><a href="tutoriales.html">Tutoriales</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="appointments">
+            <h2>Gestionar Citas</h2>
+            <!-- Calendario de Citas -->
+            <div class="calendar">
+                <div class="month">
+                    <span class="month-name">Noviembre 2024</span>
+                    <div class="weekdays">
+                        <span>Lun</span>
+                        <span>Mar</span>
+                        <span>Mié</span>
+                        <span>Jue</span>
+                        <span>Vie</span>
+                        <span>Sáb</span>
+                        <span>Dom</span>
+                    </div>
+                    <div class="days">
+                        <!-- Generar días del mes aquí -->
+                        <span class="day">1</span>
+                        <span class="day">2</span>
+                        <span class="day selected">3</span>
+                        <span class="day">4</span>
+                        <!-- Añadir el resto de los días del mes -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario de Agendar Nueva Cita -->
+            <div class="new-appointment">
+                <h3>Agendar Nueva Cita</h3>
+                <form>
+                    <label for="date">Fecha:</label>
+                    <input type="date" id="date" required>
+                    <label for="time">Hora:</label>
+                    <input type="time" id="time" required>
+                    <label for="notes">Notas:</label>
+                    <textarea id="notes" rows="3" placeholder="Detalles de la cita"></textarea>
+                    <button type="submit">Agendar Cita</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007acc;
+    padding: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de Historial */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007acc;
+    margin-bottom: 20px;
+}
+
+/* Lista de Historial de Citas */
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.appointment {
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.date {
+    font-weight: bold;
+    color: #007acc;
+}
+
+.time {
+    font-style: italic;
+    color: #333;
+    margin-top: 5px;
+}
+
+.notes {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .appointment {
+        padding: 10px;
+    }
+
+    .date {
+        font-size: 16px;
+    }
+
+    .time, .notes {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        padding: 0;
+    }
+
+    .navbar li {
+        margin: 5px 0;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .date {
+        font-size: 14px;
+    }
+
+    .time, .notes {
+        font-size: 12px;
+    }
+}

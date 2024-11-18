@@ -1,0 +1,192 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007acc;
+    padding: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Panel Principal */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.monitoring, .alerts, .tutorials {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #007acc;
+    margin-bottom: 10px;
+}
+
+/* Sección de Monitoreo en Tiempo Real */
+.metrics {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.metric {
+    text-align: center;
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px 0;
+}
+
+.metric h3 {
+    color: #007acc;
+    margin-bottom: 10px;
+}
+
+/* Alertas y Notificaciones */
+.alerts {
+    background-color: #fff3cd;
+    padding: 15px;
+    border: 1px solid #ffeeba;
+    border-radius: 10px;
+}
+
+/* Guías y Tutoriales */
+.tutorial-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tutorial-item {
+    flex: 1 1 calc(33.333% - 10px);
+    background-color: #c8e6c9;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+/* Estilos del Botón de WhatsApp */
+.whatsapp-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #25D366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-link img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.whatsapp-link:hover {
+    background-color: #1ebe5d;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .whatsapp-link {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .whatsapp-link img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+    }
+    
+    .metrics {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .metric {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .tutorial-item {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        padding: 0;
+    }
+    
+    .navbar li {
+        margin: 5px 0;
+    }
+    
+    .navbar a {
+        font-size: 14px;
+    }
+    
+    .tutorial-item,
+    .metric {
+        padding: 8px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+}
